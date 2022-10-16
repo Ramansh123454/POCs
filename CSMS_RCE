@@ -1,0 +1,19 @@
+# Exploit Title: Simple Cold Storage Management System v1.0 - Remote Code Execution in "Create User" 
+# Exploit Author: Ramansh Sharma
+# Vendor Name: oretnom23 
+# Vendor Homepage: https://www.sourcecodester.com/php/15088/simple-cold-storage-management-system-using-phpoop-source-code.html
+# Software Link: https://www.sourcecodester.com/php/15088/simple-cold-storage-management-system-using-phpoop-source-code.html
+# Version: v1.0
+# Tested on: Kali linux, Apache
+
+
+Description:A Remote Code Execution in Simple Cold Storage Management System v1.0 allows an attacker to input arbitrary code into those vulnerable parameters
+
+Vulnerable Parameters:
+Choose Avatar
+
+Steps:
+1) Login into admin account
+2) Now go to "http://localhost/csms/admin/?page=user/manage_user" and create a user
+3) Now in Section chhose photo/avatar put a php RCE payload file.
+4) Now save the user and our payload has been when we view the file.
